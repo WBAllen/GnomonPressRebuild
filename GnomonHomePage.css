@@ -93,10 +93,23 @@ header a {
     font-size: 18px;
 }
 
+#branding {
+    color:#081108;
+    text-align: center;
+    font-weight: 700;
+    font-weight: bold;
+}
+
+/* #navbar > .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} */
+
 #highlight, #current a {
     color:#081108;
     font-weight: 700;
-    /* font-weight: bold; */
+    font-weight: bold;
 }
 
 #current a:hover, a:hover {
@@ -153,6 +166,16 @@ header a {
 #boxes > .container {
     display: flex;
     justify-content: space-between;
+}
+
+#boxes > .titles_list {
+    padding: 15px;
+    text-align: left;
+}
+
+#boxes > .titles_list > h1 {
+    padding: 1px;
+    text-align: center;
 }
 
 .box {
