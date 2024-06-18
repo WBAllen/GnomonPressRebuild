@@ -8,7 +8,7 @@ body {
     padding: 0;
     margin: 0;
     line-height: 1.5;
-    background-color: #f1f0bd;
+    background-color: rgb(204,204,159);
 }
 
 .container {
@@ -58,11 +58,11 @@ ul {
 #gnomon-logo {
     display: flex;
     justify-content: center;
-    align-items: top;
+    align-items: center;
   }
 
 header {
-    background-color: #f1f0bd;
+    background-color: rgb(204,204,159);
     color: #0f9013;
     /* Setting min-height so the height for the header section can expand if needed */
     min-height: 70px;
@@ -120,17 +120,17 @@ header a {
 /* Showcase */
 #showcase {
     min-height: 100px;
-    background-image: url("GnomonImages/river-5524569_640.jpeg");
+    /* background-image: url("GnomonImages/river-5524569_640.jpeg"); */
     background-position: center;
     background-size: cover;
-    border-bottom: 3px solid  #0b580e;
+    /* border-bottom: 3px solid#0b580e; */
     text-align: center;
-    color:#f1f0bd;
+    color:#0b580e;
 }
 
 #showcase h1 {
     margin-top: 20px;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
     font-size: 40px;
     font-style: bold;
 }
@@ -140,7 +140,7 @@ header a {
 }
 
 /* Newsletter */
-#newsletter {
+/* #newsletter {
     background-color: #2d2b3e;
     padding: 15px;
     color: #e6e6e6;
@@ -156,11 +156,11 @@ header a {
     padding: 4px;
     height: 25px;
     width: 250px;
-}
+} */
 
 /* Boxes */
 #boxes {
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 #boxes > .container {
