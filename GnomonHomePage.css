@@ -100,11 +100,11 @@ header a {
     font-weight: bold;
 }
 
-/* #navbar > .container {
+#navbar > .container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-} */
+    justify-content: center;
+}
 
 #highlight, #current a {
     color:#081108;
@@ -197,6 +197,10 @@ header a {
     padding: 10px;
     box-sizing: border-box; /* Include padding in the width calculation */
     margin-bottom: 20px; /* Add some space between rows */
+}
+
+.box > p {
+    text-align: left;
 }
 
 /* Media query for smaller screens */
