@@ -1,6 +1,3 @@
-/* Importing the Lato Google Font (Regular and Bold) */
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
-
 /* Basic Style */
 body {
     font-family: 'Libre Baskerville', serif;
@@ -49,10 +46,10 @@ ul {
 /* Header */
 header {
     background-color: rgb(204,204,159);
-    color: #08550b;
+    color: #0f9013;
     min-height: 70px;
-    border-bottom: 3px solid #08550b;
-    padding: 20px 0;
+    border-bottom: 3px solid #0b580e;
+    padding: 5px 0;
 }
 
 header .container {
@@ -72,18 +69,18 @@ header .container {
 
 #branding h1 {
     margin: 0;
-    font-size: 50px;
+    font-size: 24px;
     font-weight: bold;
 }
 
 #branding p {
     margin: 0;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 /* Navbar */
 #navbar {
-    margin-top: 25px;
+    margin-top: 10px;
 }
 
 #navbar nav {
@@ -213,30 +210,3 @@ footer {
     text-align: center;
     margin-top: 20px;
 }
-
-
-/* Media Queries */
-@media (max-width: 768px) {
-    header > .container,
-    #newsletter > .container,
-    #boxes > .container {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 20px;
-    }
-
-    #showcase .container {
-        padding-bottom: 50px;
-    }
-
-    .box {
-        width: 80%;
-    }
-
-    #about > .container,
-    #services > .container {
-        grid-template-columns: 1fr;
-    }
-}
-
