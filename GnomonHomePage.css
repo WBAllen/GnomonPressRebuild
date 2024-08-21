@@ -72,15 +72,17 @@ header .container {
 }
 
 #branding h1 {
-    margin: 15px;
+    margin: 5px;
     font-size: 70px;
     font-weight: bold;
-    text-align: center;
+    /* text-align: center; */
 }
 
 #branding p {
-    margin: 0;
-    font-size: 20px;
+    margin: 2px;
+    margin-bottom: 15px;
+    font-size: 18px;
+    /* text-align: center; */
 }
 
 /* Navbar */
@@ -163,7 +165,9 @@ header .container {
     justify-content: space-around;
 }
 
-.box1 {
+
+
+.box {
     width: 30%;
     text-align: center;
     padding: 20px;
@@ -171,7 +175,7 @@ header .container {
     margin-bottom: 20px;
 }
 
-.box {
+.box1 {
     width: 40%;
     text-align: center;
     padding: 20px;
