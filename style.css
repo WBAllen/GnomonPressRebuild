@@ -52,42 +52,45 @@ header {
     color: #08550b;
     min-height: 70px;
     border-bottom: 3px solid #08550b;
-    padding: 20px 0;
+    padding: 15px 0;
 }
 
-header .container {
+/* header .container {
     display: flex;
     flex-direction: column;
-}
+} */
 
-#logo-and-text {
+/* #logo-and-text1 {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-}
+} */
 
 #gnomon-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-right: 35px;
     margin-top: 35px;
 }
 
 #branding h1 {
     margin: 5px;
-    font-size: 70px;
+    font-size: 50px;
     font-weight: bold;
-    /* text-align: center; */
+    text-align: center;
 }
 
 #branding p {
     margin: 2px;
     margin-bottom: 15px;
     font-size: 18px;
-    /* text-align: center; */
+    text-align: center;
 }
 
 /* Navbar */
 #navbar {
-    margin-top: 25px;
+    margin-top: 15px;
 }
 
 #navbar nav {
@@ -131,7 +134,7 @@ header .container {
 }
 
 #showcase h1 {
-    margin-top: 40px;
+    margin-top: 20px;
     margin-bottom: 5px;
     font-size: 35px;
     font-style: bold;
@@ -149,7 +152,7 @@ header .container {
 #boxes .container {
     display: flex;
     flex-wrap: wrap;
-    padding: 30px;
+    padding: 15px;
     justify-content: space-around;
 }
 
@@ -161,30 +164,33 @@ header .container {
     display: flex;
     flex-wrap: wrap;
     padding: 25px;
-    text-align: left;
+    text-align: center;
     justify-content: space-around;
 }
-
-
 
 .box {
     width: 30%;
     text-align: center;
-    padding: 20px;
+    padding: 8px;
     box-sizing: border-box;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
 
 .box1 {
-    width: 40%;
+    width: 30%;
     text-align: center;
-    padding: 20px;
+    padding: 5px;
     box-sizing: border-box;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
+    /* width: 40%;
+    text-align: center;
+    padding: 5px;
+    box-sizing: border-box;
+    margin-bottom: 20px; */
 }
 
 .box p {
-    text-align: left;
+    text-align: center;
 }
 
 .box .citation {
@@ -194,6 +200,11 @@ header .container {
 /* Contact Form */
 
 /* Sidebar */
+#logo-and-text2 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
 .sidebar {
     display: flex;
     justify-content: center;
