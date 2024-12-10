@@ -353,12 +353,12 @@ header .container {
     background-color: #0b580e;
     padding: 20px;
 }
-/* 
+
 #about .container {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    column-gap: 50px;
-} */
+    column-gap: 30px;
+}
 
 #about .main-col {
     color: #fff;
