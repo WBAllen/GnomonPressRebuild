@@ -55,21 +55,21 @@ header {
     padding: 15px 0;
 }
 
-/* header .container {
+header .container {
     display: flex;
     flex-direction: column;
-} */
+}
 
-/* #logo-and-text1 {
+#logo-and-text {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-} */
+}
 
 #gnomon-logo {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     margin-right: 35px;
     margin-top: 35px;
 }
@@ -78,10 +78,25 @@ header {
     margin: 5px;
     font-size: 50px;
     font-weight: bold;
+    text-align: left;
+}
+
+#gnomon-logo2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 35px;
+    margin-top: 35px;
+}
+
+#branding2 h1 {
+    margin: 5px;
+    font-size: 50px;
+    font-weight: bold;
     text-align: center;
 }
 
-#branding p {
+#branding2 p {
     margin: 2px;
     margin-bottom: 15px;
     font-size: 18px;
@@ -164,16 +179,17 @@ header {
     display: flex;
     flex-wrap: wrap;
     padding: 25px;
-    text-align: center;
+    text-align: left;
     justify-content: space-around;
 }
 
 .box {
     width: 30%;
     text-align: center;
-    padding: 8px;
+    padding: 5px;
     box-sizing: border-box;
-    margin-bottom: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .box1 {
@@ -181,7 +197,8 @@ header {
     text-align: center;
     padding: 5px;
     box-sizing: border-box;
-    margin-bottom: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     /* width: 40%;
     text-align: center;
     padding: 5px;
@@ -197,14 +214,35 @@ header {
     text-align: center;
 }
 
+/* ORDER BUTTON FOR TITLES PAGE */
+
+/* Style the order-button container */
+.order-button {
+    text-align: center;      /* Center the button inside its container */
+    margin: 20px 0;          /* Add space above and below the button */
+}
+
+/* Style for the button */
+.order-button button {
+    font-size: 16px;
+    background-color: #0b580e;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 5px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.order-button button:hover {
+    background-color: #08790a;  /* Slightly darker color when hovering */
+}
+
+
+
 /* Contact Form */
 
 /* Sidebar */
-#logo-and-text2 {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-}
 .sidebar {
     display: flex;
     justify-content: center;
@@ -362,6 +400,12 @@ footer {
     #about > .container,
     #services > .container {
         grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .box {
+        width: 100%;    /* Full width on smaller screens */
     }
 }
 
