@@ -362,6 +362,7 @@ header .container {
 
 #about .main-col {
     color: #fff;
+    line-height: 25px;
 }
 
 #about .sidebar {
