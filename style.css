@@ -36,10 +36,10 @@ ul {
     margin-bottom: 10px;
 }
 
-/* .light {
+.light {
     background-color: #e6e6e6;
     color: #2d2b3e;
-} */
+}
 
 .dark {
     background-color: #2d2b3e;
@@ -50,67 +50,55 @@ ul {
 header {
     background-color: rgb(204,204,159);
     color: #08550b;
-    min-height: 70px;
-    border-bottom: 3px solid #08550b;
-    padding: 15px 0;
 }
 
 header .container {
     display: flex;
     flex-direction: column;
+    align-items: center; /* Align everything to the left */
 }
 
 #logo-and-text {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-}
-
-#gnomon-logo {
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    margin-right: 35px;
-    margin-top: 35px;
-}
-
-#branding h1 {
-    margin: 5px;
-    font-size: 50px;
-    font-weight: bold;
-    text-align: left;
+    justify-content: center; /* centered heading text */
+    width: 100%;
+    padding: 5px 0; /* Reduced padding */
 }
 
 #gnomon-logo2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-right: 35px;
-    margin-top: 35px;
+    margin-right: 10px;
+    margin-left: 0;
+    padding: 10px 0; /* Reduced padding */
 }
 
 #branding2 h1 {
-    margin: 5px;
-    font-size: 50px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    font-size: 45px;
     font-weight: bold;
-    text-align: center;
+    text-align: center; /* Align text to the left */
 }
 
 #branding2 p {
-    margin: 2px;
-    margin-bottom: 15px;
-    font-size: 18px;
-    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    text-align: center; /* Align text to the left */
 }
 
 /* Navbar */
 #navbar {
-    margin-top: 15px;
+    width: 100%; /* Full width to match the container */
+    margin-top: 10px; /* Reduced margin to keep the navbar close to the logo */
+    border-top: 3px solid #08550b;
+    border-bottom: 3px solid #08550b;
+    padding: 10px 0; /* Reduced padding for less vertical space */
 }
 
 #navbar nav {
     display: flex;
-    justify-content: center;
+    justify-content: center; /* Align nav items to the left */
 }
 
 #navbar ul {
@@ -131,13 +119,8 @@ header .container {
     font-size: 18px;
 }
 
-#highlight, #current a {
+#navbar a:hover {
     color: #081108;
-    font-weight: bold;
-}
-
-#current a:hover, a:hover {
-    color: #0b580e;
     font-weight: bold;
 }
 
@@ -149,10 +132,13 @@ header .container {
 }
 
 #showcase h1 {
-    margin-top: 20px;
+    margin-top: 50px;
     margin-bottom: 5px;
-    font-size: 35px;
+    font-size: 25px;
     font-style: bold;
+    border: solid 3px #0b580e;
+    border-radius: 5px;
+
 }
 
 #showcase p {
@@ -193,17 +179,13 @@ header .container {
 }
 
 .box1 {
-    width: 30%;
+    flex-direction: column;
+    width: 40%;
     text-align: center;
     padding: 5px;
     box-sizing: border-box;
     margin-top: 10px;
     margin-bottom: 10px;
-    /* width: 40%;
-    text-align: center;
-    padding: 5px;
-    box-sizing: border-box;
-    margin-bottom: 20px; */
 }
 
 .box p {
@@ -237,10 +219,6 @@ header .container {
 .order-button button:hover {
     background-color: #08790a;  /* Slightly darker color when hovering */
 }
-
-
-
-/* Contact Form */
 
 /* Sidebar */
 .sidebar {
@@ -322,32 +300,6 @@ header .container {
     background-color: #08550b;
 }
 
-
-/* Media query for smaller screens */
-@media (max-width: 768px) {
-    .box {
-        width: 100%;
-    }
-
-    header .container {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #navbar nav {
-        justify-content: center;
-    }
-
-    #showcase .container {
-        padding-bottom: 50px;
-    }
-
-    #about .container {
-        grid-template-columns: 1fr;
-    }
-}
-
 /* About */
 #about {
     background-color: #0b580e;
@@ -379,6 +331,7 @@ footer {
     margin-top: 20px;
 }
 
+
 /* Media Queries */
 @media (max-width: 768px) {
     header > .container,
@@ -395,18 +348,46 @@ footer {
     }
 
     .box {
-        width: 80%;
+        width: 100%;
     }
 
     #about > .container,
     #services > .container {
         grid-template-columns: 1fr;
     }
-}
 
-@media (max-width: 768px) {
-    .box {
-        width: 100%;    /* Full width on smaller screens */
+    #navbar nav {
+        justify-content: center;
     }
-}
 
+    .container {
+        width: 90%; /* Reduced container width for small screens */
+    }
+
+    #logo-and-text {
+        flex-direction: column;
+        align-items: flex-start; /* Align logo and branding text to the left */
+    }
+
+    #gnomon-logo2 {
+        margin-right: 0;
+        margin-bottom: 10px; /* Added space below the logo */
+    }
+
+    #branding2 h1 {
+        font-size: 30px; /* Adjust font size for small screens */
+    }
+
+    #navbar nav {
+        justify-content: flex-start; /* Align navbar items to the left */
+    }
+
+    #navbar ul {
+        flex-direction: column; /* Stack the nav items vertically on small screens */
+    }
+
+    #navbar li {
+        padding: 10px 0; /* Increased padding for easier tapping */
+    }
+
+}
