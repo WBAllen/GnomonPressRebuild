@@ -136,8 +136,8 @@ header .container {
     margin-bottom: 5px;
     font-size: 25px;
     font-style: bold;
-    border: solid 3px #0b580e;
-    border-radius: 5px;
+    /* border: solid 3px #0b580e;
+    border-radius: 5px; */
 
 }
 
@@ -174,18 +174,20 @@ header .container {
     text-align: center;
     padding: 5px;
     box-sizing: border-box;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .box1 {
+    display: flex;
     flex-direction: column;
     width: 40%;
     text-align: center;
+    align-items: center;
     padding: 5px;
     box-sizing: border-box;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .box p {
@@ -336,7 +338,8 @@ footer {
 @media (max-width: 768px) {
     header > .container,
     #newsletter > .container,
-    #boxes > .container {
+    #boxes > .container
+    {
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -363,6 +366,56 @@ footer {
     .container {
         width: 90%; /* Reduced container width for small screens */
     }
+
+    .quote {
+        width: 100%;
+        max-width: none;
+        padding: 10px;
+    }
+
+    /* "FROM CGPT" Adjust form input fields */
+    .quote div {
+        width: 80%; /* Make each form field take full width */
+        margin-bottom: 5px; /* Reduce space between fields */
+    }
+
+    .quote input,
+    .quote textarea {
+        width: 100%; /* Make inputs take up the full width */
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        font-size: 16px; /* Ensure text is legible on small screens */
+    }
+
+    .quote label {
+        font-size: 16px; /* Adjust label font size for better readability */
+    }
+
+    .quote button {
+        width: 100%; /* Button also takes full width */
+        padding: 15px; /* Larger padding for easier interaction */
+        font-size: 18px; /* Slightly larger text for the button */
+    }
+
+    /* Adjust the sidebar background color and form spacing */
+    .sidebar {
+        padding: 15px; /* Reduced padding to avoid excess space */
+    }
+
+    /* Reduce the font size of the form title on small screens */
+    .form-title {
+        font-size: 28px; /* Smaller title font size */
+        margin-bottom: 15px; /* Adjust margin */
+    }
+
+    /* Adjust the height of the input fields and textarea */
+    .quote input,
+    .quote textarea {
+        min-height: 40px; /* Ensure they are tall enough to see placeholder text */
+    }
+
+
 
     #logo-and-text {
         flex-direction: column;
