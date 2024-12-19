@@ -351,7 +351,7 @@ footer {
     }
 
     .box {
-        width: 100%;
+        width: 90%;
     }
 
     #about > .container,
@@ -414,8 +414,6 @@ footer {
     .quote textarea {
         min-height: 40px; /* Ensure they are tall enough to see placeholder text */
     }
-
-
 
     #logo-and-text {
         flex-direction: column;
